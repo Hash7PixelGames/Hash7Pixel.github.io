@@ -7,12 +7,24 @@
     <meta name="description" content="Hash 7 Pixel Games - Studio Website" />
 	<meta name="keywords" content="Creative portfolio, Game Studio" />
 	<meta name="author" content="Philip Ha" />
-    <title>Willy Wonkas - Personal Portfolio Website Template</title>
+    <title>Hash7PixelGames</title>
   <!--favicon-img--> 
    <link rel="icon" type="image/png" href="images/favicon.png">
    <!--favicon-img-->
    <!--main css file should not be removed -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/tab.css" >
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/colors.css">
+    <link rel="stylesheet"  href="css/roles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
@@ -24,7 +36,7 @@
     <!--mouse  follower-->
     <!--loader-->
         <div id="loader">
-            <span class="color">Arlo</span>Brown 
+            <span class="color">Hash</span>7Pixel 
         </div>
     <!--loader-end-->
     <!--link-screen-->
@@ -34,45 +46,17 @@
         </div>
     <!--link-screen-->
         <!--Main-Section-->
-        <!--Navigator-fullscreen-->
-        <div id="navigation-content">
-            <div class="logo">
-                <img src="images/hash7pixel-logo.png" alt="logo">
-            </div>
-            <div class="navigation-close">
-                <span class="close-first"></span>
-                <span class="close-second"></span>
-            </div>
-            <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >HOME</a>
-                <a href="#" data-text="ABOUT" id="about-link" >ABOUT</a>
-                <a href="#" data-text="BLOG" id="blog-link" >BLOG</a>
-                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >PORTFOLIO</a>
-                <a href="#" data-text="CONTACT" id="contact-link" >CONTACT</a>
-            </div>
-        </div>
-        <!--Navigator-Fullscreen END-->
           <!--Home Page-->
-        <!--Menubar-->
-        <div id="navigation-bar">
-            <img src="images/willy wonka logo.png" alt="logo">
-            <div class="menubar">
-                <span class="first-span"></span>
-                <span class="second-span"></span>
-                <span class="third-span"></span>
-            </div>
-        </div>
-        <!--Menubar End-->
           <!--Header-->
         <div id="header">
             <div id="particles"></div>
               <!--Social Media Links-->
             <div class="social-media-links">
-               <a href="#"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
-                <a href="#"><img src="images/facebook logo.png" class="social-media" alt="facebook-logo"></a>
-                <a href="#"><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
-                <a href="#"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
-
+               <a href="https://www.instagram.com/hash7pixel_studio/" target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
+                <a href="https://x.com/Hash7G43376" target="_blank"><img src="images/twitter logo.png" class="social-media" alt="twitter-logo"></a>
+                <a href="https://discord.gg/5xNBmWBB" target="_blank"><img src="images/discord logo.png" class="social-media" alt="discord-logo"></a>
+                <a href="https://www.youtube.com/@lanha3385" target="_blank"><img src="images/youtube logo.png" class="social-media" alt="youtube-logo"></a>
+                <a href="https://www.tiktok.com/@hash7pixelstudio?lang=en" target="_blank"><img src="images/tiktok logo.png" class="social-media" alt="tiktok-logo"></a>
             </div>
             <!--Social Media Links end-->
             <div class="header-content">
@@ -87,226 +71,57 @@
                     <div class="contact">
                 <a href="Mailto:#"><img src="images/mail.png" alt="email-pic" class="contactpic"></a><!--Your email Id write in place of "#"-->
                 <a href="Tel:#"><img src="images/call.png" alt="phone-pic" class="contactpic"></a><!--Your telephone number Id write in place of "#"-->
+                <a href="https://github.com/Hash7PixelGames" target="_blank"><img src="images/github logo.png" alt="github" class="contactpic"></a>     
                     </div>    
             </div>
             </div>
             <!--header image-->
-            <div class="header-image">
-            <img src="images/man.jpg" alt="logo">
-            <img src="images/man.jpg" alt="logo">
-            </div>
+          
+            
+    
             <!--header image end-->
         </div>
-           <!--Header End-->
-        <!--HomePage End-->
-        <!--Main-Section End-->
-        <!--about-->
-        <div id="about">
-            <div class="color-changer">
-            <div class="color-panel">
-                <img src="images/gear.png" alt="">
+        <nav id="content-tabs">
+            <label>
+                <span class="material-symbols-rounded">joystick</span>
+                Games
+                <input type="radio" name="tab" id="gamesTab" checked>
+            </label>
+            <label>
+                <span class="material-symbols-rounded">Person</span>
+                About Tab
+                <input type="radio" name="tab" id="aboutTab">
+            </label>
+            <label>
+                <span class="material-symbols-rounded">partner_exchange</span>
+                Partner Studio
+                <input type="radio" name="tab" id="partnerTab">
+            </label>
+        </nav>
+        <section id="games" class="tab-content">
+            <h2>Games</h2>
+            <div class="cards">
+                <a href="games/SLIDE/">
+                    <img src="games/SLIDE/icon_web.png" class="cover" loading="lazy">
+                    <h4>SLIDE</h4>
+                    <div class="icons">
+                        <!-- <svg viewBox="0 0 24 24">
+                            <use xlink:href="#itchio"></use>
+                        </svg> -->
+                        <svg viewBox="0 0 24 24">
+                            <use xlink:href="#googleplay"></use>
+                        </svg>
+                        <!-- <svg viewBox="0 0 24 24">
+                            <use xlink:href="#appstore"></use>
+                        </svg> -->
+                    </div>
+                </a>
             </div>
-            <div class="color-selector">
-                <div class="heading">Custom Colors</div>
-                <div class="colors">
-                    <ul >
-                    <li>
-                        <a href="#0" class="color-red " title="color-red"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-purple" title="color-purple"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-malt" title="color-malt"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-green" title="color-green"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-blue" title="color-blue"></a>
-                    </li>
-                    <li>
-                        <a href="#0" class="color-orange" title="color-orange"></a>
-                    </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <!--about content-->
-            <div id="about-content">
-                <div class="about-header">
-                    About <span class="color">Me</span>
-                    <span class ="header-caption">Get to Know <span class="color"> me.</span></span>
-                </div>
-                <div class="about-main">
-            <div class="about-first-paragraph wow">
-            <!--about description-->
-               <span class="about-first-line">
-                    I'm creative 
-                    <span class="color">web developer</span>
-                     based in New York , USA </span>
-                     <br>
-               <span class="about-second-line"> With 20 years of experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step while working.</span>
-               <div class="cv">
-                <a href="#"><button>Download <span class="colors">CV</span></button></a>
-            </div>
-            </div>
-            <!--about picture-->
-            <div class="about-img">
-                <img src="images/about.jpg" alt="Your Image">
-            </div>
-            </div>
-    
-            </div>
-            <!--services start-->
-            <div id="services">
+        </section>
+
+        <section id="about" class="tab-content">
+            <div>
                 <div class="color-changer">
-                    <div class="color-panel">
-                        <img src="images/gear.png" alt="">
-                    </div>
-                    <div class="color-selector">
-                        <div class="heading">Custom Colors</div>
-                        <div class="colors">
-                            <ul >
-                            <li>
-                                <a href="#0" class="color-red " title="color-red"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-purple" title="color-purple"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-malt" title="color-malt"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-green" title="color-green"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-blue" title="color-blue"></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="color-orange" title="color-orange"></a>
-                            </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-            <!--services header-->
-                    <div class="services-heading wow">
-                        <span class="color">My</span> Services
-                    </div>
-            <!--services header end-->
-            <!--services content-->
-                    <div class="services-content">
-                           <div class="service-one service wow">
-                               <div class="service-img">
-                               <img src="images/coding.png" alt="service-one">
-                               </div>
-                               <div class="service-description">
-                                <h2>Web Designing</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
-                               </div>
-                           </div>
-                           <div class="service-two service wow">
-                               <div class="service-img">
-                               <img src="images/instagram.png" alt="service-two">
-                               </div>
-                               <div class="service-description">
-                                <h2>Social Media</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
-                               </div>
-                           </div>
-                           <div class="service-three service wow">
-                            <div class="service-img">
-                               <img src="images/bulb.png" alt="service-three">
-                            </div>
-                            <div class="service-description">
-                                <h2>Creative Design</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <!--services content end-->
-            <!--services end-->
-            <div id="skills">
-                <div class="skills-header">
-                     My <span class="color"> Skills</span>
-                </div>
-                <div class="skills-content " style="text-align: center;">
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        HTML/CSS
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="html-progress wow">95%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                      Javascript
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="js-progress wow">90%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        Adobe Ps
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="adobe-progress wow">83%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        PHP
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="php-progress wow">87%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        JQuery
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="jquery-progress wow">94%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        SEO
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="seo-progress wow">84%</div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-    <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
-             <div class="footer-text">
-                 <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
-             </div>
-            </div>
-    <!--copyright-section-->
-        </div>
-        <!--about end-->
-        <!--portfolio-->
-        <div id="project">
-            <div class="color-changer">
                 <div class="color-panel">
                     <img src="images/gear.png" alt="">
                 </div>
@@ -336,64 +151,165 @@
                     </div>
                 </div>
                 </div>
-            <div class="portfolio-header"> <span class="color"> Our </span> Project
-            <span class ="header-caption"> Some of our <span class="color"> Games</span></span></div>
-             <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/portfolio-first.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>App Idea</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
+                <!--about content-->
+                <div id="about-content">
+                    <div class="about-header">
+                        About <span class="color">Us</span>
+                        <span class ="header-caption">Get to Know <span class="color"> the founder.</span></span>
+                    </div>
+                    <div class="about-main">
+                <div class="about-first-paragraph wow">
+                <!--about description-->
+                   <span class="about-first-line">
+                        His is a creative 
+                        <span class="color">Game developer</span>
+                         based in Toronto , CA </span>
+                         <br>
+                   <span class="about-second-line"> With 5 years of experience as a game developer, He had acquire various skill to make his idea into a digital reality. He enjoy every step while working.</span>
+                   <div class="cv">
+                </div>
+                <!--about picture-->
+                <div class="about-img">
+                    <img src="images/philip.jpg" alt="Your Image">
+                </div>
+                </div>
+        
+                </div>
+                <!--services start-->
+                <div id="services">
+                    <div class="color-changer">
+                        <div class="color-panel">
+                            <img src="images/gear.png" alt="">
+                        </div>
+                        <div class="color-selector">
+                            <div class="heading">Custom Colors</div>
+                            <div class="colors">
+                                <ul >
+                                <li>
+                                    <a href="#0" class="color-red " title="color-red"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-purple" title="color-purple"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-malt" title="color-malt"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-green" title="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-blue" title="color-blue"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-orange" title="color-orange"></a>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+                <!--services content end-->
+                <!--services end-->
+                <div id="skills">
+                    <div class="skills-header">
+                         Our <span class="color"> Skills</span>
+                    </div>
+                    <div class="skills-content " style="text-align: center;">
+                        <div class="skill-unity skill">
+                            <div class="skill-text">
+                        <div class="Unity">
+                            Unity
+                        </div>
+                            </div>
+                        <div class="unity-prog ">
+                     <div class="unity-progress ">80%</div>
+                        </div>
+                        </div>
+                        <div class="skill-unity skill">
+                            <div class="skill-text">
+                        <div class="Unity">
+                            Unreal
+                        </div>
+                            </div>
+                        <div class="unity-prog ">
+                     <div class="unreal-progress ">30%</div>
+                        </div>
+                        </div>
+                        <div class="skill-unity skill">
+                            <div class="skill-text">
+                        <div class="Unity">
+                            Adobe PS
+                        </div>
+                            </div>
+                        <div class="unity-prog ">
+                     <div class="adobe-progress ">45%</div>
+                        </div>
+                        </div>
+                    <div class="skill-unity skill">
+                    <div class="skill-text">
+                        <div class="Unity">
+                            Java
+                    </div>
+                        </div>
+                      <div class="unity-prog ">
+                    <div class="java-progress ">75%</div>
+                    </div>
+                        </div>
+                    <div class="skill-unity skill">
+                    <div class="skill-text">
+                        <div class="Unity">
+                            Python/Tensorflow/OpenCV
+                    </div>
+                        </div>
+                     <div class="unity-prog ">
+                    <div class="python-progress ">80%</div>
+                </div>
+        <!--copyright-section You Can Remove After Downloading-->
+                <div class="footer">
+                 <div class="footer-text">
+                     <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Hash 7 Pixel Games
                  </div>
-                 <div class="portfolio portfolio-second">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-second.jpg" alt="portfolio-second">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Web Designing</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad laudantium suscipit
-                             voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
                 </div>
-             
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
+        <!--copyright-section-->
+            </div>
+        </section>
+
+        <section id="partner" class="tab-content">
+            <h2>Studio Partner</h2>
+            <div class="cards">
+                <a href="https://desertharestudios.github.io/" target="_blank">
+                    <img src="images/DesertdHareStudios logo.png" class="cover" loading="lazy">
+                    <h4>DesertdHareStudios</h4>
+                    <div class="icons">
+                        <!-- <svg viewBox="0 0 24 24">
+                            <use xlink:href="#itchio"></use>
+                        </svg> -->
+                        <svg viewBox="0 0 24 24">
+                            <use xlink:href="#github"></use>
+                        </svg>
+                        <!-- <svg viewBox="0 0 24 24">
+                            <use xlink:href="#appstore"></use>
+                        </svg> -->
                     </div>
-                    <div class="portfolio-text">
-                        <h2>UI Designing</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
-                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Wow Graphics</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                 </div>
-                    <!--copyright-section You Can Remove After Downloading-->
-            <div class="footer">
-                <div class="footer-text">
-                    <img src="./images/copyright.png" alt="copyright-img" class="images" height="14px"> Willy Wonkas
-                </div>
-               </div>
-       <!--copyright-section-->
-             </div>
-        <!--portfolio end-->
+                </a>
+            </div>
+        </section>
+        
+        
+           <!--Header End-->
+           <footer>
+            <p>Copyright © 2024 <a href="index.html">Hash7Pixel Games</a></p>
+            <!-- <div>
+                <a href="terms">Terms of Service</a>
+                <a href="privacy">Privacy Policy</a>
+            </div> -->
+        </footer>
+        <!--HomePage End-->
+        <!--Main-Section End-->
+        <!--about-->
+       
+       
+        <!--about end-->
         <!--contact-->
      <div id="contact">
         <div class="color-changer">

@@ -1,0 +1,9 @@
+.tab-content {
+    display: none;
+}
+
+body:has(#gamesTab:checked) #games,
+body:has(#aboutTab:checked) #about,
+body:has(#partnerTab:checked) #partner{
+    display: block;
+}
